@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+    <head><title>SchedulerOverviewPage</title></head>
+    <body>
+    
+        <wicket:extend>
+            <h1 class="mt-5">Scheduler</h1>
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Aktionen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr wicket:id="schedulers">
+                        <td><span wicket:id="id">4711</span></td>
+                        <td><span wicket:id="name">Ein Scheduler</span></td>
+                    
+                        <td>
+                            <a href="#" wicket:id="edit" class="btn btn-secondary" role="button">Bearbeiten</a>
+                            <a href="#" wicket:id="delete" class="btn btn-danger" role="button">Löschen</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#" id="new" wicket:id="new" class="btn btn-primary" role="button">Neu</a>
+        </wicket:extend>
+        
+    </body>
+</html>

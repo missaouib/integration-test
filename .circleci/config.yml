@@ -50,7 +50,7 @@ jobs:
         key: v1-dependencies-{{ checksum "pom.xml" }}
 
     - run:
-        name: Maven Test
+        name: Maven Test2
         command: |
           JAVA_HOME=$PWD/jdk-11.0.1 mvn test -D spring.profiles.active=test
 
